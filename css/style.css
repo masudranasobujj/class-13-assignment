@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body{
+	font-family: 'Saira', sans-serif;
+	background-color: #F3F0EB;
+}
+/*****top header start*****/
+.top-header{
+    border-bottom: 1px solid #000;
+}
+.top-header .th-text-left{}
+.top-header .th-text-left a{
+    color: #000;
+    text-decoration: none;
+}
+.top-header .th-icon-right{}
+.top-header .th-icon-right a{
+    color: #000;
+}
+.top-header .th-icon-right a:hover{
+	color: #cc891a;
+}
+
+/*****top header end*****/
+/*****header start*****/
+header{
+	background-color: #F3F0EB;
+	border-bottom: 1px solid #000;
+}
+.headerlogoposition{
+    position: relative;
+}
+header ul li{}
+header ul li a{
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    color: #000 !important;
+    display: inline-block !important;
+}
+header ul li a:hover{
+	color: #B56251 !important;
+}
+header ul li a span{
+	background-color: #B56251;
+	height: 2px;
+	width: 0%;
+	display: block;
+	margin-top: 2px;
+	transition-duration: 0.5s;
+}
+header ul li:hover a span{
+	width: 100%;
+}
+.headerlogoposition .navbar-brand img{
+	width: 150px;
+}
+.headerlogoposition .navbar-brand{
+    position: absolute;
+    top: 10px;
+    right: 50%;
+    transform: translate( 50%, -38px);
+    margin: 0 !important;
+}
+/*****header end*****/
+
+/*****banner section start*****/
+.banner-section{}
+.banner-section p{
+	text-align: center;
+	background-color: #333333;
+	margin: 0px;
+	color: #BCAA78;
+	padding: 4px 0px;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+}
+.banner-section .banner-content{
+	background-image: url(../images/bannerbg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 161px 0px;
+	text-align: center;
+	background-color: #0000008a;
+	background-blend-mode: multiply;
+}
+.banner-section .banner-content span{
+    background-color: #b562518f;
+    height: 2px;
+    display: block;
+    margin: auto;
+}
+.banner-section .banner-content h3{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 300;
+    margin: 20px 0px;
+}
+/*****banner section end*****/
+
+/*****product section start*****/
+.product-section{}
+.product-section .porduct-content{}
+.product-section .porduct-content .product{
+    height: 306px;
+    position: relative;
+    overflow: hidden;
+}
+.product-section .porduct-content .product img:nth-child(1){
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate( 0px, 0px);
+    transition-duration: 0.5s;
+    object-fit: contain;
+}
+.product-section .porduct-content:hover .product img:nth-child(1){
+    top: -290px;
+    left: 0px;
+    transform: translate( 0px, 0px);
+}
+.product-section .porduct-content .product img:nth-child(2){
+    position: absolute;
+    top: 290px;
+    left: 0px;
+    transform: translate( 0px, 0px);
+    transition-duration: 0.5s;
+    opacity: 0;
+    object-fit: contain;
+}
+.product-section .porduct-content:hover .product img:nth-child(2){
+    top: 0px;
+    left: 0px;
+    transform: translate( 0px, 0px);
+    opacity: 1;
+}
+.product-section .porduct-content .product h4{
+    position: absolute;
+    right: 50%;
+    bottom: -11%;
+    transform: translate( 50%, -11%);
+    background-color: #000;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 0px;
+    margin: 0;
+    transition-duration: 0.6s;
+}
+.product-section .porduct-content:hover .product h4{
+    right: 50%;
+    bottom: 0%;
+    transform: translate( 50%, 0%);
+}
+
+.product-section .porduct-content .product h4 a{
+    text-decoration: none;
+    color: #fff;
+}
+.product-section .porduct-content .product span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate( 0, 0);
+    background-color: #000;
+    padding: 3px 10px;
+    color: #fff;
+}
+.product-section .porduct-content .product-description{
+    margin-top: 10px;
+}
+.product-section .porduct-content .product-description h4{
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+}
+.product-section .porduct-content .product-description h5{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+.product-section .porduct-content .product-description h5 span{
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+/*****product section end*****/
+
+/******footer css start*******/
+footer{
+    border-top: 1px #000 solid;
+}
+footer ul{}
+footer ul li{}
+footer ul li h3{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+footer ul li a{
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #000 !important;
+}
+footer ul li a:hover{
+    color: #B56251 !important;
+}
+footer ul li input{   
+    padding: 4px 4px;  
+    color: #000;   
+    border: 1px #000 solid;   
+    border-radius: 2px;
+}
+footer ul li input::placeholder{
+    color: #000;
+}
+/******footer css end*******/
